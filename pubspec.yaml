@@ -1,0 +1,10 @@
+name: your_project_name
+description: A new Flutter project.
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.3
+
+flutter:
+  uses-material-design: true

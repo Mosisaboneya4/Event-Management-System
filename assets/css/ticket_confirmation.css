@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.confirmation-container {
+    width: 500px;
+}
+
+.ticket-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+.ticket-header {
+    margin-bottom: 20px;
+}
+
+.ticket-header h1 {
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.success-message {
+    color: #666;
+    font-size: 1em;
+}
+
+.ticket-details {
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.event-info h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.event-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.ticket-meta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket-meta > div {
+    text-align: left;
+}
+
+.ticket-meta label {
+    display: block;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.ticket-meta span {
+    color: #666;
+}
+
+.ticket-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: 48%;
+    text-align: center;
+}
+
+.btn-view-tickets {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-view-tickets:hover {
+    background-color: #0056b3;
+}
+
+.btn-browse-events {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-browse-events:hover {
+    background-color: #218838;
+}
+
+.otp-section {
+    background-color: #f1f1f1;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.otp-section h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.otp-code {
+    font-size: 2em;
+    font-weight: bold;
+    color: #28a745;
+    letter-spacing: 5px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.otp-expiry {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.otp-note {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 0.9em;
+}

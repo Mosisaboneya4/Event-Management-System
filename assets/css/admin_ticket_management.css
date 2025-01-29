@@ -1,0 +1,162 @@
+.ticket-management-container {
+    padding: 20px;
+    width: 100%;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.tickets-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tickets-table th, 
+.tickets-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.tickets-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.tickets-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tickets-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-view,
+.btn-edit {
+    color: #333;
+    text-decoration: none;
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-view:hover {
+    color: #3498db;
+}
+
+.btn-edit:hover {
+    color: #2ecc71;
+}
+
+.no-data {
+    text-align: center;
+    color: #6c757d;
+    padding: 20px;
+}
+
+.header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .ticket-management-container {
+        padding: 15px;
+    }
+
+    .tickets-table {
+        font-size: 0.9em;
+    }
+
+    .tickets-table th, 
+    .tickets-table td {
+        padding: 10px;
+    }
+
+    .header-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-primary {
+        align-self: flex-start;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tickets-table thead {
+        display: none;
+    }
+
+    .tickets-table, 
+    .tickets-table tbody, 
+    .tickets-table tr, 
+    .tickets-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .tickets-table tr {
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        background-color: white;
+    }
+
+    .tickets-table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .tickets-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .action-buttons {
+        justify-content: flex-end;
+    }
+
+    .header-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-primary {
+        width: 100%;
+        justify-content: center;
+    }
+}
