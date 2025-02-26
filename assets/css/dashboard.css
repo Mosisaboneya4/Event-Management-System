@@ -1,0 +1,351 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.user-info h1 {
+    margin: 0 0 10px 0;
+    color: #007bff;
+}
+
+.user-info p {
+    margin: 0;
+    color: #6c757d;
+}
+
+.header-actions .btn {
+    margin-left: 10px;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-profile {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-logout {
+    background-color: #dc3545;
+    color: white;
+}
+
+.dashboard-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 48%;
+}
+
+.stat-card h3 {
+    margin: 0 0 10px 0;
+    color: #6c757d;
+}
+
+.stat-card p {
+    font-size: 2em;
+    font-weight: bold;
+    color: #007bff;
+    margin: 0;
+}
+
+.dashboard-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.upcoming-events, .past-events {
+    width: 48%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.event-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.event-card {
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #007bff;
+}
+
+.event-card h3 {
+    margin: 0 0 10px 0;
+    color: #007bff;
+}
+
+.event-card p {
+    margin: 5px 0;
+    color: #6c757d;
+}
+
+.btn-view {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.quick-actions {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quick-actions .btn {
+    flex-grow: 1;
+    margin: 0 10px;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-browse {
+    background-color: #28a745;
+}
+
+.btn-tickets {
+    background-color: #17a2b8;
+}
+
+.btn-edit-profile {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+/* Scrollbar styling for event lists */
+.event-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.event-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.event-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.event-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Notification Styles */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 4px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.notification.show {
+    opacity: 1;
+}
+
+.notification-info {
+    background-color: #17a2b8;
+}
+
+.notification-success {
+    background-color: #28a745;
+}
+
+.notification-warning {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.notification-error {
+    background-color: #dc3545;
+}
+.photo-sharing-section {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin: 2.5rem 0;
+}
+
+.photo-sharing-section h2 {
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.modern-upload-form {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fafafa;
+    padding: 2.5rem;
+    border-radius: 16px;
+}
+
+.upload-area {
+    background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+    border-radius: 16px;
+    padding: 4rem 2rem;
+    text-align: center;
+    border: 3px dashed #6366f1;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+    border-color: #4f46e5;
+    transform: translateY(-2px);
+}
+
+.upload-icon {
+    font-size: 4rem;
+    background: linear-gradient(45deg, #6366f1, #4f46e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
+}
+
+.custom-file-upload {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: white;
+    padding: 1.2rem 3rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2);
+}
+
+.custom-file-upload:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.photo-details-input {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.input-group label {
+    font-weight: 600;
+    color: #374151;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 1.2rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    background: #ffffff;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+    outline: none;
+}
+
+.input-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.upload-actions {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.btn-upload {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: white;
+    padding: 1.2rem 4rem;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2);
+}
+
+.btn-upload:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+}

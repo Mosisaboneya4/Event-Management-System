@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.events-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0;
+    color: #333;
+}
+
+.search-filter {
+    display: flex;
+    gap: 15px;
+}
+
+#event-search, #category-filter {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#event-search {
+    width: 250px;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.event-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: scale(1.03);
+}
+
+.event-header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.event-header h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.event-date {
+    font-size: 0.9em;
+}
+
+.event-details {
+    padding: 15px;
+}
+
+.event-details p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.event-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+    font-size: 0.9em;
+}
+
+.event-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f4f4f4;
+}
+
+.ticket-price {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.btn-purchase {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-purchase:hover {
+    background-color: #218838;
+}
+
+.btn-purchase:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+.no-events {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #666;
+    padding: 50px;
+}
+
+.event-status {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.event-status.draft {
+    background-color: #FFC107;
+    color: #212529;
+}
+
+.event-status.published {
+    background-color: #28a745;
+    color: white;
+}
+
+.event-status.cancelled {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-filter {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #event-search, #category-filter {
+        width: 100%;
+    }
+}
